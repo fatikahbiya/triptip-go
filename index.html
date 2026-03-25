@@ -753,7 +753,7 @@ footer { background:var(--gray-900); color:#fff; padding:64px 20px 28px; }
     <div class="hero-inner">
       <div class="hero-eyebrow"><div class="dot-pulse"></div> Trusted Travel Partner Sejak 2019</div>
       <h1>Liburan Seru &<br><span>Jastip Mudah</span></h1>
-      <p class="hero-sub">Open trip ke 10+ negara + jasa titip dari Jepang, Korea, Thailand & lainnya.<br>Praktis, terpercaya, dan harga terjangkau.</p>
+      <p class="hero-sub">Open trip ke 10+ negara + jasa titip dari Jepang, turki, Thailand & lainnya.<br>Praktis, terpercaya, dan harga terjangkau.</p>
       <div class="hero-ctas">
         <button class="cta-big cta-trip" onclick="goto('trip')"><i class="fas fa-plane"></i> Lihat Open Trip</button>
         <button class="cta-big cta-jastip" onclick="goto('jastip')"><i class="fas fa-shopping-bag"></i> Order Jastip</button>
@@ -790,7 +790,7 @@ footer { background:var(--gray-900); color:#fff; padding:64px 20px 28px; }
           <div class="path-overlay">
             <div class="path-badge orange">🛍️ Jasa Titip</div>
             <h3>Titip Barang<br>dari Luar Negeri</h3>
-            <p>Snack Jepang, skincare Korea, fashion Thailand, parfum Singapura — semua bisa dititip!</p>
+            <p>Snack Jepang, snack Turki, fashion Thailand, parfum Singapura — semua bisa dititip!</p>
             <button class="path-btn orange-btn">Order Jastip <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
@@ -957,7 +957,7 @@ footer { background:var(--gray-900); color:#fff; padding:64px 20px 28px; }
     <div class="container">
       <button class="back-link" onclick="goto('home')"><i class="fas fa-arrow-left"></i> Kembali</button>
       <h1>🛍️ Jasa Titip Luar Negeri</h1>
-      <p>Titip barang impian dari Jepang, Korea, Thailand & Singapura. Mudah, aman, harga transparan.</p>
+      <p>Titip barang impian dari Jepang, Turki, Thailand & Singapura. Mudah, aman, harga transparan.</p>
     </div>
   </div>
 
@@ -1078,9 +1078,10 @@ footer { background:var(--gray-900); color:#fff; padding:64px 20px 28px; }
       <div class="foot-col">
         <h4>Jastip</h4>
         <a onclick="goto('jastip')">🇯🇵 Jastip Jepang</a>
-        <a onclick="goto('jastip')">🇰🇷 Jastip Korea</a>
+        <a onclick="goto('jastip')">🇰🇷 Jastip china</a>
         <a onclick="goto('jastip')">🇹🇭 Jastip Thailand</a>
         <a onclick="goto('jastip')">🇸🇬 Jastip Singapura</a>
+        <a onclick="goto('jastip')">🇸🇬 Jastip Turki</a>
       </div>
       <div class="foot-col">
         <h4>Kontak</h4>
@@ -1201,7 +1202,7 @@ const dests = [
 
 const jastips = [
   { id:'jastip-jp', country:'Jepang',    flag:'🇯🇵', fee:'Mulai Rp50.000/item', products:['Snack Jepang','Skincare','Obat-obatan','Parfum','Stationery'] },
-  { id:'jastip-kr', country:'Korea',     flag:'🇰🇷', fee:'Mulai Rp40.000/item', products:['Skincare','Makeup','Fashion','K-pop Merch','Snack'] },
+  { id:'jastip-kr', country:'china',     flag:'🇰🇷', fee:'Mulai Rp40.000/item', products:['Skincare','Makeup','Fashion','K-pop Merch','Snack'] },
   { id:'jastip-th', country:'Thailand',  flag:'🇹🇭', fee:'Mulai Rp30.000/item', products:['Snack','Fashion','Aksesoris','Produk SPA','Herbal'] },
   { id:'jastip-sg', country:'Singapura', flag:'🇸🇬', fee:'Mulai Rp35.000/item', products:['Cokelat','Parfum','Brand Lokal','Biscuit','Skincare'] }
 ];
@@ -1211,13 +1212,13 @@ const testis = [
   { name:'Bima P.',   loc:'Trip Ha Long Bay',         text:'"Ha Long Bay keindahannya luar biasa. Group cuma 8 orang jadi makin seru dan personal."',    color:'#8B5CF6', init:'BP' },
   { name:'Citra D.',  loc:'Trip Cappadocia Turki',    text:'"Naik hot air balloon pas sunrise... speechless. GoHoliday beneran wujudin bucket list aku!"', color:'#EC4899', init:'CD' },
   { name:'Denny F.',  loc:'Japan Scenic Route',       text:'"Trip Jepang 7 hari padat tapi perfect. Sudah 3x trip bareng GoHoliday, tidak pernah kecewa."', color:'#EF4444', init:'DF' },
-  { name:'Eka W.',    loc:'Jastip Skincare Korea',    text:'"Titip skincare Korea, sampai kondisi sempurna & harga jauh lebih murah. Prosesnya gampang banget!"', color:'#10B981', init:'EW' },
+  { name:'Eka W.',    loc:'Jastip Snack turki',    text:'"Titip snack turki, sampai kondisi sempurna & harga jauh lebih murah. Prosesnya gampang banget!"', color:'#10B981', init:'EW' },
   { name:'Farhan M.', loc:'Trip Langkawi',            text:'"Sky Bridge & island hopping jadi highlight. Langkawi lebih indah dari ekspektasi. Pasti balik!"',  color:'#F59E0B', init:'FM' }
 ];
 
 const jastiTesti = [
   { name:'Sari A.',    loc:'Jastip Snack Jepang',    text:'"Nitip snack Jepang super mudah, harganya transparan, barang sampe utuh semua. 100% recommended!"', color:'#EC4899', init:'SA' },
-  { name:'Rian P.',    loc:'Jastip Skincare Korea',  text:'"Beli skincare Korea lewat GoHoliday jauh lebih hemat & aman dibanding official store. Mantap!"',   color:'#8B5CF6', init:'RP' },
+  { name:'Rian P.',    loc:'Jastip Snack turki',  text:'"Beli snack turki lewat GoHoliday jauh lebih hemat & aman dibanding official store. Mantap!"',   color:'#8B5CF6', init:'RP' },
   { name:'Mega L.',   loc:'Jastip Fashion Thailand', text:'"Baju Thailand kualitasnya bagus & murah. Pesannya gampang, dibalas WA super cepat. Suka!"',          color:'#10B981', init:'ML' }
 ];
 
