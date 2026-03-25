@@ -1081,7 +1081,7 @@ footer { background:var(--gray-900); color:#fff; padding:64px 20px 28px; }
         <a onclick="goto('jastip')">🇰🇷 Jastip china</a>
         <a onclick="goto('jastip')">🇹🇭 Jastip Thailand</a>
         <a onclick="goto('jastip')">🇸🇬 Jastip Singapura</a>
-        <a onclick="goto('jastip')">🇸🇬 Jastip Turki</a>
+        <a onclick="goto('jastip')">🇸🇬 Jastip Singapura</a>
       </div>
       <div class="foot-col">
         <h4>Kontak</h4>
@@ -1105,7 +1105,7 @@ footer { background:var(--gray-900); color:#fff; padding:64px 20px 28px; }
 /* ======= DATA ======= */
 const trips = [
   { id:'kl',      name:'Kuala Lumpur 4D3N',       country:'Malaysia',flag:'🇲🇾',ck:'malaysia', dur:'4D3N', price:3750000, badge:'hot',
-    img:'https://images.unsplash.com/photo-1596422846543-75c6fc197f11?w=600&q=80',
+    img:'asset/malaysia.jpg',
     highlights:['Petronas Twin Towers','Jalan Alor','Genting Highlands'],
     includes:['Hotel bintang 3 (3 malam)','Tiket pesawat PP (estimate)','Tour guide lokal','Transport selama trip','Makan 3x/hari','Free dokumentasi HD','Tiket masuk wisata'],
     itinerary:[
@@ -1115,7 +1115,7 @@ const trips = [
       {day:4,title:'Departure',items:['Sarapan hotel','Check out','Transfer ke bandara']}
     ]},
   { id:'lgk',     name:'Langkawi 4D3N',            country:'Malaysia',flag:'🇲🇾',ck:'malaysia', dur:'4D3N', price:4600000, badge:'pop',
-    img:'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=600&q=80',
+    img:'asset/Langkawi Malaysia.jpg',
     highlights:['SkyCab','Sky Bridge','Island Hopping'],
     includes:['Resort tepi pantai (3 malam)','Tiket pesawat PP','Tour guide','Speed boat','Makan 3x/hari','Free dokumentasi','Tiket masuk semua objek'],
     itinerary:[
@@ -1123,6 +1123,16 @@ const trips = [
       {day:2,title:'SkyCab + Sky Bridge',items:['Langkawi Cable Car','Sky Bridge 125m','Oriental Village']},
       {day:3,title:'Island Hopping',items:['Speedboat island hopping seharian','Pulau Beras Basah snorkeling','Pulau Dayang Bunting','Eagle Square']},
       {day:4,title:'Departure',items:['Sarapan','Waktu bebas','Transfer bandara']}
+    ]},
+    { id:'lgk',     name:'Malaysia Nature Escape 4D3N',            country:'Malaysia',flag:'🇲🇾',ck:'malaysia', dur:'4D3N', price:4600000, badge:'pop',
+    img:'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=600&q=80',
+    highlights:['SkyCab','Sky Bridge','Island Hopping'],
+    includes:['Resort tepi pantai (3 malam)','Tiket pesawat PP','Tour guide','Speed boat','Makan 3x/hari','Free dokumentasi','Tiket masuk semua objek'],
+    itinerary:[
+      {day:1,title:'Arrival Kuala Lumpur & Night City',items:['Tiba Langkawi Airport','Check in resort','Cenang Beach sunset']},
+      {day:2,title:'Genting Highland Tour',items:['Langkawi Cable Car','Sky Bridge 125m','Oriental Village']},
+      {day:3,title:'Cameron Highlands Nature Tour',items:['Speedboat island hopping seharian','Pulau Beras Basah snorkeling','Pulau Dayang Bunting','Eagle Square']},
+      {day:4,title:'Kuala Lumpur Shopping & Departure',items:['Sarapan','Waktu bebas','Transfer bandara']}
     ]},
   { id:'bkk',     name:'Bangkok – Pattaya 4D3N',   country:'Thailand',flag:'🇹🇭',ck:'thailand', dur:'4D3N', price:5200000, badge:'hot',
     img:'https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=600&q=80',
@@ -1193,7 +1203,7 @@ const trips = [
 ];
 
 const dests = [
-  { key:'malaysia', name:'Malaysia', flag:'🇲🇾', img:'https://images.unsplash.com/photo-1596422846543-75c6fc197f11?w=500&q=80' },
+  { key:'malaysia', name:'Malaysia', flag:'🇲🇾', img:'asset/malaysia.jpg' },
   { key:'thailand', name:'Thailand', flag:'🇹🇭', img:'https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=500&q=80' },
   { key:'vietnam',  name:'Vietnam',  flag:'🇻🇳', img:'https://images.unsplash.com/photo-1528127269322-539801943592?w=500&q=80' },
   { key:'jepang',   name:'Jepang',   flag:'🇯🇵', img:'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=500&q=80' },
