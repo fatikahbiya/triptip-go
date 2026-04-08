@@ -777,7 +777,7 @@ footer { background:var(--gray-900); color:#fff; padding:64px 20px 28px; }
       </div>
       <div class="paths-grid">
         <div class="path-card trip-card-hero rev" onclick="goto('trip')">
-          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80" alt="Open Trip">
+          <img src="asset/zikry.jpg" alt="Open Trip">
           <div class="path-overlay">
             <div class="path-badge blue">✈️ Open Trip</div>
             <h3>Jelajahi Dunia<br>Bersama Kami</h3>
@@ -1105,7 +1105,7 @@ footer { background:var(--gray-900); color:#fff; padding:64px 20px 28px; }
 /* ======= DATA ======= */
 const trips = [
   { id:'kl',      name:'Kuala Lumpur 4D3N',       country:'Malaysia',flag:'🇲🇾',ck:'malaysia', dur:'4D3N', price:5950000, badge:'hot',
-    img:'asset/malaysia.jpg',
+    img:'asset/zikry.jpg',
     highlights:['Petronas Twin Towers','Jalan Alor','Genting Highlands'],
     includes:['Hotel bintang 3 (3 malam)','Tour guide lokal','Transport selama trip','Makan 3x/hari','Free dokumentasi HD','Tiket masuk wisata'],
     itinerary:[
@@ -1188,6 +1188,19 @@ const trips = [
       {day:7,title:'Departure',items:['Sarapan','Last shopping','Transfer Kansai Airport']}
     ]},
   { id:'turkey',  name:'Turkey Highlights 7D6N',    country:'Turki',flag:'🇹🇷',ck:'turki',     dur:'7D6N', price:18900000, badge:'pop',
+    img:'https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=600&q=80',
+    highlights:['Cappadocia','Pamukkale','Ephesus'],
+    includes:['Hotel bintang 4 (6 malam)','Transport + domestic flight','Tour guide Indonesia','Makan 2x/hari','Free dokumentasi','Hot air balloon Cappadocia'],
+    itinerary:[
+      {day:1,title:'Istanbul Arrival',items:['Tiba Istanbul Airport','Blue Mosque','Grand Bazaar area']},
+      {day:2,title:'Istanbul Classics',items:['Hagia Sophia','Topkapi Palace','Bosphorus cruise','Spice Bazaar']},
+      {day:3,title:'→ Cappadocia',items:['Flight ke Cappadocia','Check in cave hotel','Sunset Valley']},
+      {day:4,title:'Cappadocia Day',items:['Sunrise hot air balloon!','Göreme Open Air Museum','Underground City']},
+      {day:5,title:'Pamukkale',items:['Cotton Castle travertin','Hierapolis','Cleopatra Pool']},
+      {day:6,title:'Ephesus + Farewell',items:['Ephesus Ancient City','Library of Celsus','Farewell dinner Istanbul']},
+      {day:7,title:'Departure',items:['Sarapan','Last shopping Grand Bazaar','Transfer Istanbul Airport']}
+    ]},
+  { id:'turkey',  name:'plan your trip',    country:'Turki',flag:'🇹🇷',ck:'turki',     dur:'7D6N', price:18900000, badge:'pop',
     img:'https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=600&q=80',
     highlights:['Cappadocia','Pamukkale','Ephesus'],
     includes:['Hotel bintang 4 (6 malam)','Transport + domestic flight','Tour guide Indonesia','Makan 2x/hari','Free dokumentasi','Hot air balloon Cappadocia'],
