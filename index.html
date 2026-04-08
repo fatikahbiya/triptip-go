@@ -1104,7 +1104,7 @@ footer { background:var(--gray-900); color:#fff; padding:64px 20px 28px; }
 <script>
 /* ======= DATA ======= */
 const trips = [
-  { id:'kl',      name:'Kuala Lumpur 4D3N',       country:'Malaysia',flag:'🇲🇾',ck:'malaysia', dur:'4D3N', price:3750000, badge:'hot',
+  { id:'kl',      name:'Kuala Lumpur 4D3N',       country:'Malaysia',flag:'🇲🇾',ck:'malaysia', dur:'4D3N', price:5950000, badge:'hot',
     img:'asset/malaysia.jpg',
     highlights:['Petronas Twin Towers','Jalan Alor','Genting Highlands'],
     includes:['Hotel bintang 3 (3 malam)','Tiket pesawat PP (estimate)','Tour guide lokal','Transport selama trip','Makan 3x/hari','Free dokumentasi HD','Tiket masuk wisata'],
@@ -1229,9 +1229,8 @@ const testis = [
 const jastiTesti = [
   { name:'Fatikah Sabiya.',    loc:'Jastip Snack Jepang',    text:'"Nitip snack Jepang super mudah, harganya transparan, barang sampe utuh semua. 100% recommended!"', color:'#EC4899', init:'SA' },
   { name:'Rian P.',    loc:'Jastip Snack turki',  text:'"Beli snack turki lewat GoHoliday jauh lebih hemat & aman dibanding official store. Mantap!"',   color:'#8B5CF6', init:'RP' },
-  { name:'Mega L.',   loc:'Jastip Fashion Thailand', text:'"Baju Thailand kualitasnya bagus & murah. Pesannya gampang, dibalas WA super cepat. Suka!"',          color:'#10B981', init:'ML' }
+  { name:'Bagas P.',   loc:'Jastip Fashion Thailand', text:'"Baju Thailand kualitasnya bagus & murah. Pesannya gampang, dibalas WA super cepat. Suka!"',          color:'#10B981', init:'ML' }
 ];
-
 /* ======= HELPERS ======= */
 function fmtPrice(p){ return 'From Rp'+p.toLocaleString('id-ID'); }
 function countTrip(k){ return trips.filter(t=>t.ck===k).length; }
